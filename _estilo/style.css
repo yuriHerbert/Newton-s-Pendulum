@@ -58,15 +58,15 @@ p {
 }
 .box-line-animation-A {
     animation-name: lineA;
-    animation-iteration-count: infinite;
-    animation-duration: 1.5s;
-   
-} 
+}
 .box-line-animation-B {
-     animation-name: lineB;
+    animation-name: lineB;
+}
+.box-line-animation-A,
+.box-line-animation-B {
     animation-iteration-count: infinite;
-    animation-duration: 1.5s;
-
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes lineA {
@@ -86,8 +86,6 @@ p {
         transform-origin: center top;
         transform: rotate(0deg);
     }
-
-
 }
 @keyframes lineB {
     0% {
