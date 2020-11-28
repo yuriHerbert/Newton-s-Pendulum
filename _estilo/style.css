@@ -1,0 +1,110 @@
+@charset "utf-8";
+body {
+    margin: 0;
+}
+p {
+    bottom: 0;
+    color: #ffffff;
+    margin-top: 50px;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #34495e;
+}
+.box {
+    width: 500px;
+    height: 400px;
+}
+.line-top {
+    width: auto;
+    height: 10px;
+    top: 1;
+    border-radius: 10px;
+    background: rgb(161, 161, 161);
+    box-shadow: 2px 2px 6px 2px #2a3a4b;
+}
+.container-line {
+    width: 500px;
+    height: 390px;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+}
+.box-line,
+.box-line-animation-A,
+.box-line-animation-B {
+    width: 100px;
+    height: 390px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.line {
+    width: 2px;
+    height: 300px;
+    background: rgb(209, 209, 209);
+}
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgb(209, 209, 209);
+    box-shadow: 2px 2px 6px 2px #2a3a4b;
+}
+.box-line-animation-A {
+    animation-name: lineA;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+   
+} 
+.box-line-animation-B {
+     animation-name: lineB;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+
+}
+
+@keyframes lineA {
+    0% {
+        transform-origin: center top;
+        transform: rotate(0deg);
+    }
+    25% {
+        transform-origin: center top;
+        transform: rotate(20deg);
+    }
+    50% {
+        transform-origin: center top;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform-origin: center top;
+        transform: rotate(0deg);
+    }
+
+
+}
+@keyframes lineB {
+    0% {
+        transform-origin: center top;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform-origin: center top;
+        transform: rotate(0deg);
+    }
+    75% {
+        transform-origin: center top;
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform-origin: center top;
+        transform: rotate(0deg);
+    }
+}
